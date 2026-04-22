@@ -24,13 +24,17 @@ function ListarNumerosImpares() {
 }
 //ejecuta las otras funciones pide un valor y el if valida y llama a la funcion correspondiente
 function ejecutar(valor_ejecucion) {
-  if (valor_ejecucion == 1) {
-    ListarNumeros();
-  } else if (valor_ejecucion == 2) {
-    ListarNumerosReveras();
-  } else if (valor_ejecucion == 3) {
-    ListaNumerosPares();
-  } else if (valor_ejecucion == 4) {
-    ListarNumerosImpares();
+  switch (valor_ejecucion) {
+    case 1:
+      ListaNumerosPares();
+      break;
+    case 2:
+      ListarNumerosReveras();
+      break;
+    case 3:
+      ListaNumerosPares();
+      break;
+    case 4:
+      ListarNumerosImpares();
   }
 }
